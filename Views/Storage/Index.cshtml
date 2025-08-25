@@ -1,0 +1,37 @@
+﻿@{
+    ViewData["Title"] = "Azure Storage Tests";
+}
+
+<h2>Azure Storage Test Page</h2>
+
+<hr />
+
+<h3>1️⃣ Table Storage</h3>
+<p>
+    <a asp-controller="Storage" asp-action="AddCustomer">Add Customer</a> |
+    <a asp-controller="Storage" asp-action="AddProduct">Add Product</a>
+</p>
+
+<hr />
+
+<h3>2️⃣ Queue Storage</h3>
+<p>
+    <a asp-controller="Storage" asp-action="SendQueueMessage">Send Test Order Message</a>
+</p>
+
+<hr />
+
+<h3>3️⃣ Blob Storage Upload</h3>
+<form asp-controller="Storage" asp-action="UploadBlob" method="post" enctype="multipart/form-data">
+    <input type="file" name="file" />
+    <button type="submit">Upload Image to Blob</button>
+</form>
+
+<hr />
+
+<h3>4️⃣ File Storage Upload</h3>
+<form asp-controller="Storage" asp-action="UploadFile" method="post" enctype="multipart/form-data">
+    <input type="file" name="file" />
+    <button type="submit">Upload File to Azure File Share</button>
+</form>
+
