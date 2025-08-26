@@ -1,105 +1,100 @@
-📦 ABC Retail – CLDV6212 Portfolio of Evidence (POE)
-Author: James Baker
-Student No: ST10457455
-Module: PROG6221 – Portfolio of Evidence
-Institution: Varsity College, Newlands, Cape Town
-Year: 2025
+# ABC Retail - Azure Cloud Portfolio of Evidence (POE)
 
-🏢 Project Background
-ABC Retail is a rapidly growing online retailer currently using an aging on-premises order processing system. The company faces several challenges:
+## Student Information
+- **Student Number:** ST10457455  
+- **Module Code:** CLDV6212  
+- **Project Part:** Complete POE (Parts 1–3)  
 
-Customer orders and product data stored in traditional relational databases struggle to handle high transaction volumes during peak seasons.
+---
 
-Product images are stored in network drives, causing slow access and storage inefficiencies.
+## Project Background
 
-Legacy message queuing middleware lacks scalability, causing delays and processing errors.
+ABC Retail, a rapidly growing online retailer, faced several challenges with its legacy on-premises infrastructure:
 
-Data analytics infrastructure cannot efficiently process complex customer data, impacting personalization, recommendations, and operational insights.
+- **Order processing:** Relational databases struggled with peak season transaction volume.  
+- **Product images:** Stored in network drives, causing slow access times and inefficiency.  
+- **Message queuing:** Legacy middleware lacked scalability, resulting in delays and errors.  
+- **Data analytics:** On-premises tools could not efficiently process diverse customer data types, leading to delays in actionable insights.  
 
-The goal of this POE is to design and implement scalable, cloud-based solutions using Microsoft Azure to improve order processing, storage, messaging, and analytics.
+Despite migrating parts of the system to the cloud, ABC Retail needed a scalable, reliable, and cost-effective cloud solution to handle real-time events, store data efficiently, and enable better analytics.
 
-🛠️ Project Scope & Objectives
-The POE consists of 3 parts that progressively build the final solution:
+---
 
-Azure Storage Solution – Part 1
+## Project Objective
 
-Enhanced Functionality and Integration – Part 2
+Develop a cloud-based solution using **Microsoft Azure** that:  
 
-Final Deployment and Reflection – Part 3
+1. Stores customer profiles and product information using **Azure Tables**.  
+2. Hosts images and multimedia content with **Azure Blob Storage**.  
+3. Handles order processing and inventory management using **Azure Queues**.  
+4. Stores dummy contracts using **Azure Files**.  
+5. Deploys a fully functional **web application** accessible via an Azure App Service.  
 
-Key Objectives:
+---
 
-Store customer profiles and product information using Azure Tables
+## Technologies Used
 
-Host product images and multimedia content using Azure Blob Storage
+- **Microsoft Visual Studio 2022**  
+- **.NET 8 Web Application**  
+- **Azure Services:**  
+  - Azure Tables  
+  - Azure Blob Storage  
+  - Azure Queues  
+  - Azure Files  
+  - Azure App Service  
+- **Version Control:** GitHub  
 
-Process orders and inventory using Azure Queues
+---
 
-Store contracts and documents using Azure Files
+## Web Application Features
 
-Deploy a web application to Azure App Service
+- Upload and download data from Azure Storage Services.  
+- Display customer, product, and order information dynamically.  
+- Host multimedia content efficiently using Blob Storage.  
+- Scalable and reliable messaging for order processing using Azure Queues.  
 
-Ensure solutions are scalable, reliable, and cost-effective
+---
 
-💻 Project Development
-Tools & Technologies
-Microsoft Visual Studio (.NET 8.0, C#)
+## Azure Deployment
 
-Azure Cloud Services (Tables, Blobs, Queues, Files, App Service)
+- **Resource Group:** `AZ-JHB-RSG-VCWCCN-ST10457455-TER`  
+- **Web App Name:** `st104457455cldv6212`  
+- **App Service Plan:** `st10457455cldv6212` (Basic B1)  
+- **App URL:** [https://st104457455cldv6212-eaadbyevf2ggh6fx.southafricanorth-01.azurewebsites.net](https://st104457455cldv6212-eaadbyevf2ggh6fx.southafricanorth-01.azurewebsites.net)  
 
-Microsoft SQL Server
+---
 
-GitHub for source control
+## GitHub Repository
 
-Microsoft Word for submission documentation
+All source code, configurations, and project files are stored in:  
+[https://github.com/VCCT-CLDV6212-2025-G3/ST10457455_CLDV6212_POE](https://github.com/VCCT-CLDV6212-2025-G3/ST10457455_CLDV6212_POE)
 
-Development Activities
-Created a web application with Azure Storage integration:
+---
 
-Customer and product data stored in Azure Tables
+## Screenshots
 
-Product images uploaded and retrieved from Azure Blob Storage
+*(Include screenshots of each Azure Storage Service, the deployed web application, and any key functionalities here)*  
 
-Orders and inventory handled with Azure Queues
+---
 
-Dummy contracts stored using Azure Files
+## Submission Instructions
 
-Implemented file upload/download controls and display features for Azure data
+1. Ensure the web application is deployed and accessible via the URL above.  
+2. Include screenshots of all implemented features.  
+3. Submit a single MS Word document containing:  
+   - Student number  
+   - Module code  
+   - Web App URL  
+   - GitHub link  
+   - Screenshots of Azure Storage Services (at least 5 records each)  
+4. Follow the file naming convention:  
+   `StudentNumber_ModuleCode_Part#.docx`  
+   Example: `ST10457455_CLDV6212_Part1.docx`  
 
-Tested application locally and deployed to Azure App Service
+---
 
-Verified successful deployment and web accessibility
+## Notes
 
-🌐 Azure Deployment
-Resource Group: AZ-JHB-RSG-VCWCCN-ST10457455-TER
-
-App Service Plan: st10457455cldv6212 (Basic, B1 SKU)
-
-Web App Name: st104457455cldv6212
-
-Deployed Web App URL: http://st104457455cldv6212-eaadbyevf2ggh6fx.southafricanorth-01.azurewebsites.net
-
-📂 GitHub Repository
-Source Code URL: https://github.com/VCCT-CLDV6212-2025-G3/ST10457455_CLDV6212_POE
-
-📝 Screenshots & Documentation
-Screenshots of Azure Tables, Blob Storage, Queues, and Files with sample records
-
-Screenshots of web application functionality
-
-Include the deployed web app URL in the submission document
-
-✅ Submission Instructions
-Submit a MS Word document including:
-
-Student Number and Module Code
-
-Answers, diagrams, and screenshots of web app and Azure resources
-
-URL of the deployed web application
-
-GitHub repository link
-
-File naming convention: StudentNumber_ModuleCode_Part#.docx
-
-Example: ST10457455_CLDV6212_Part1.docx
+- Focus on scalability, reliability, and cost-effectiveness for all Azure services.  
+- Test all functionalities locally before deploying to Azure.  
+- Use the GitHub repository to maintain version control throughout the project.
