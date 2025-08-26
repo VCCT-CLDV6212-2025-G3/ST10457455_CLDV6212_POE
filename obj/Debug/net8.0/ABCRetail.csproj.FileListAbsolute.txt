@@ -41,3 +41,8 @@
 /Users/jamesbaker/ST10457455_CLDV6212_POE/ABCRetail/obj/Debug/net8.0/ABCRetail.pdb
 /Users/jamesbaker/ST10457455_CLDV6212_POE/ABCRetail/obj/Debug/net8.0/ABCRetail.genruntimeconfig.cache
 /Users/jamesbaker/ST10457455_CLDV6212_POE/ABCRetail/obj/Debug/net8.0/ref/ABCRetail.dll
+/Users/jamesbaker/ST10457455_CLDV6212_POE/ABCRetail/bin/Debug/net8.0/publish/web.config
+/Users/jamesbaker/ST10457455_CLDV6212_POE/ABCRetail/bin/Debug/net8.0/publish/ABCRetail.deps.json
+/Users/jamesbaker/ST10457455_CLDV6212_POE/ABCRetail/bin/Debug/net8.0/publish/ABCRetail.runtimeconfig.json
+/Users/jamesbaker/ST10457455_CLDV6212_POE/ABCRetail/bin/Debug/net8.0/publish/appsettings.Development.json
+/Users/jamesbaker/ST10457455_CLDV6212_POE/ABCRetail/bin/Debug/net8.0/publish/appsettings.json

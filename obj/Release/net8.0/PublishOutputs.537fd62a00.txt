@@ -1,0 +1,17 @@
+/Users/jamesbaker/ST10457455_CLDV6212_POE/ABCRetail/bin/Release/net8.0/publish/ABCRetail
+/Users/jamesbaker/ST10457455_CLDV6212_POE/ABCRetail/bin/Release/net8.0/publish/appsettings.Development.json
+/Users/jamesbaker/ST10457455_CLDV6212_POE/ABCRetail/bin/Release/net8.0/publish/appsettings.json
+/Users/jamesbaker/ST10457455_CLDV6212_POE/ABCRetail/bin/Release/net8.0/publish/ABCRetail.dll
+/Users/jamesbaker/ST10457455_CLDV6212_POE/ABCRetail/bin/Release/net8.0/publish/ABCRetail.deps.json
+/Users/jamesbaker/ST10457455_CLDV6212_POE/ABCRetail/bin/Release/net8.0/publish/ABCRetail.runtimeconfig.json
+/Users/jamesbaker/ST10457455_CLDV6212_POE/ABCRetail/bin/Release/net8.0/publish/ABCRetail.pdb
+/Users/jamesbaker/ST10457455_CLDV6212_POE/ABCRetail/bin/Release/net8.0/publish/Azure.Core.dll
+/Users/jamesbaker/ST10457455_CLDV6212_POE/ABCRetail/bin/Release/net8.0/publish/Azure.Data.Tables.dll
+/Users/jamesbaker/ST10457455_CLDV6212_POE/ABCRetail/bin/Release/net8.0/publish/Azure.Storage.Blobs.dll
+/Users/jamesbaker/ST10457455_CLDV6212_POE/ABCRetail/bin/Release/net8.0/publish/Azure.Storage.Common.dll
+/Users/jamesbaker/ST10457455_CLDV6212_POE/ABCRetail/bin/Release/net8.0/publish/Azure.Storage.Files.Shares.dll
+/Users/jamesbaker/ST10457455_CLDV6212_POE/ABCRetail/bin/Release/net8.0/publish/Azure.Storage.Queues.dll
+/Users/jamesbaker/ST10457455_CLDV6212_POE/ABCRetail/bin/Release/net8.0/publish/Microsoft.Bcl.AsyncInterfaces.dll
+/Users/jamesbaker/ST10457455_CLDV6212_POE/ABCRetail/bin/Release/net8.0/publish/System.ClientModel.dll
+/Users/jamesbaker/ST10457455_CLDV6212_POE/ABCRetail/bin/Release/net8.0/publish/System.IO.Hashing.dll
+/Users/jamesbaker/ST10457455_CLDV6212_POE/ABCRetail/bin/Release/net8.0/publish/System.Memory.Data.dll
