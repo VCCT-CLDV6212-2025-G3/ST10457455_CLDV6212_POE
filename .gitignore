@@ -1,7 +1,6 @@
-# Ignore configuration files and sensitive data
+echo "bin/
+obj/
+publish/
 appsettings.json
 appsettings.Development.json
-publish/
-bin/
-obj/
-.vscode/
+.vscode/" > .gitignore
