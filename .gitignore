@@ -1,0 +1,6 @@
+# Ignore local settings
+appsettings.json
+bin/
+obj/
+.publish/
+.vscode/
