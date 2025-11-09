@@ -1,6 +1,7 @@
-# Ignore local settings
+# Ignore configuration files and sensitive data
 appsettings.json
+appsettings.Development.json
+publish/
 bin/
 obj/
-.publish/
 .vscode/
