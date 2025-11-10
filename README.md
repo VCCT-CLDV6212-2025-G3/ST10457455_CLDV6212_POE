@@ -51,86 +51,84 @@ Planned improvements and next-phase features include:
 
 ## 🧱 **System Architecture**
 
+```text
 +---------------------------+
-| ASP.NET Core MVC |
-| (Controllers & Views) |
+|     ASP.NET Core MVC      |
+|   (Controllers & Views)   |
 +------------+--------------+
-|
-v
+             |
+             v
 +---------------------------+
-| Azure Blob Storage |
+|     Azure Blob Storage    |
 | (Product Images / Upload) |
 +------------+--------------+
-|
-v
+             |
+             v
 +---------------------------+
-| Azure Table Storage |
-| (Product Data Tables) |
+|     Azure Table Storage   |
+|   (Product Data Tables)   |
 +------------+--------------+
-|
-v
+             |
+             v
 +---------------------------+
-| Azure App Service |
-| (Web Hosting Platform) |
+|     Azure App Service     |
+|   (Web Hosting Platform)  |
 +---------------------------+
+
 
 yaml
 Copy code
 
 ---
 
-## 🚀 **Deployment Steps**
+## 🚀 **Deployment Guide**
 
-1. **Publish the project**  
+### 1️⃣ Deploy to Azure App Service
+
+Follow these steps to publish your cloud app to Azure:
+
+1. **Open VS Code** → Install the **Azure App Service** Extension.  
+2. **Sign in** to your Azure Account.  
+3. **Right-click** your project folder → Select **“Deploy to Web App”**.  
+4. Choose your resource group and confirm the deployment.  
+
+---
+
+### 2️⃣ Configure Environment Variables
+
+After deployment:
+
+1. Go to **Azure Portal** → **App Service** → **Configuration**.  
+2. Under **Application Settings**, click **+ Add** and enter:
+
    ```bash
-   dotnet publish -c Release
-Deploy to Azure App Service
+   Name:  ConnectionStrings__AzureStorage  
+   Value: <your Azure Storage connection string>
+Click Apply and restart the App Service.
 
-Open VS Code → Install Azure App Service Extension
+3️⃣ Verify Storage Connections
+Once deployed, confirm that your Azure resources are connected:
 
-Sign in to your Azure Account
+Go to Azure Portal → Storage Account → Tables.
 
-Right-click project folder → Deploy to Web App
+Ensure the following tables exist:
 
-Configure Environment Variables
+🧾 Products
 
-In Azure Portal → App Service → Configuration
+👥 Customers
 
-Add key:
+You should see your data rows and uploaded image URLs appearing correctly.
 
-nginx
-Copy code
-ConnectionStrings__AzureStorage
-Value = your Azure Storage connection string
+🖼️ Screenshots (Recommended for Report)
+Include the following screenshots in your Word document or GitHub submission:
 
-Verify Storage Connections
-
-Go to Azure → Storage Account → Tables
-
-Ensure Products and Customers tables exist
-
-🧾 Screenshots (Recommended for Report)
-📸 Include screenshots such as:
-
-The running web app (Products page)
-
-Azure Blob Container with product images
-
-Azure Table Storage showing ProductEntity rows
-
-App Service Configuration screen
+Screenshot	Description
+🖥️ Web App Home / Products Page	Shows all products with images, names, and categories
+☁️ Azure Blob Container	Displays uploaded product images
+📋 Azure Table Storage	Shows ProductEntity rows stored in Azure Table
+⚙️ Azure App Service Configuration	Displays your environment variables and deployment settings
 
 📚 References
 Microsoft Docs. (2024). Azure App Service Overview
 
 Microsoft Docs. (2024). Azure Storage for .NET Developers
-
-Ciampa, M. (2022). Security+ Guide to Network Security Fundamentals.
-
-Schwaber, K., & Beedle, M. (2002). Agile Software Development with Scrum.
-
-👨‍💻 Author
-James Baker – ST10457455
-📧 st10457455@vcconnect.edu.za
-🏫 Varsity College – CLDV6212 Cloud Development
-📅 2025 | Portfolio of Evidence – Part 3
