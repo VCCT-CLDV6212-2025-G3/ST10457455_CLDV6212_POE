@@ -1,6 +1,7 @@
-echo "bin/
+bin/
 obj/
 publish/
 appsettings.json
+appsettings.*.json
 appsettings.Development.json
-.vscode/" > .gitignore
+.vscode/
