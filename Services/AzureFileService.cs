@@ -8,7 +8,7 @@ namespace ABC_Retail_CloudApp.Services
 
         public AzureFileService(IConfiguration config)
         {
-            string conn = config.GetConnectionString("AzureStorage")!;
+            string conn = config.GetConnectionString("AzureStorageConnection")!;
             _shareServiceClient = new ShareServiceClient(conn);
         }
 

@@ -1,0 +1,19 @@
+@model ABC_Retail_CloudApp.Models.CustomerEntity
+
+@{
+    ViewData["Title"] = "Customer Details";
+}
+
+<h2 class="mb-4">Customer Details</h2>
+
+<div class="card p-3 shadow-sm">
+
+    <p><strong>First Name:</strong> @Model.FirstName</p>
+    <p><strong>Last Name:</strong> @Model.LastName</p>
+    <p><strong>Email:</strong> @Model.Email</p>
+    <p><strong>RowKey:</strong> @Model.RowKey</p>
+
+</div>
+
+<a asp-action="Edit" asp-route-partitionKey="@Model.PartitionKey" asp-route-rowKey="@Model.RowKey" class="btn btn-warning mt-3">Edit</a>
+<a asp-action="Index" class="btn btn-secondary mt-3 ms-2">Back</a>

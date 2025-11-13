@@ -1,11 +1,19 @@
 is_global = true
 build_property.TargetFramework = net8.0
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
 build_property.TargetPlatformMinVersion = 
 build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
 build_property.ProjectTypeGuids = 
 build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
 build_property.PlatformNeutralAssembly = 
 build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ABC_Retail_CloudApp
 build_property.RootNamespace = ABC_Retail_CloudApp
@@ -20,6 +28,18 @@ build_property._RazorSourceGeneratorDebug =
 
 [/Users/jamesbaker/Desktop/CLDV6212_POE/ABC_Retail_CloudApp/Views/Customers/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ3VzdG9tZXJzL0NyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/jamesbaker/Desktop/CLDV6212_POE/ABC_Retail_CloudApp/Views/Customers/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ3VzdG9tZXJzL0RlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/jamesbaker/Desktop/CLDV6212_POE/ABC_Retail_CloudApp/Views/Customers/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ3VzdG9tZXJzL0RldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/jamesbaker/Desktop/CLDV6212_POE/ABC_Retail_CloudApp/Views/Customers/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ3VzdG9tZXJzL0VkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/jamesbaker/Desktop/CLDV6212_POE/ABC_Retail_CloudApp/Views/Customers/Index.cshtml]
@@ -40,6 +60,30 @@ build_metadata.AdditionalFiles.CssScope =
 
 [/Users/jamesbaker/Desktop/CLDV6212_POE/ABC_Retail_CloudApp/Views/Products/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHVjdHMvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/jamesbaker/Desktop/CLDV6212_POE/ABC_Retail_CloudApp/Views/Products/Upload.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHVjdHMvVXBsb2FkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/jamesbaker/Desktop/CLDV6212_POE/ABC_Retail_CloudApp/Views/ProductSQL/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHVjdFNRTC9DcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/jamesbaker/Desktop/CLDV6212_POE/ABC_Retail_CloudApp/Views/ProductSQL/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHVjdFNRTC9EZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/jamesbaker/Desktop/CLDV6212_POE/ABC_Retail_CloudApp/Views/ProductSQL/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHVjdFNRTC9EZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/jamesbaker/Desktop/CLDV6212_POE/ABC_Retail_CloudApp/Views/ProductSQL/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHVjdFNRTC9FZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/jamesbaker/Desktop/CLDV6212_POE/ABC_Retail_CloudApp/Views/ProductSQL/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHVjdFNRTC9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/jamesbaker/Desktop/CLDV6212_POE/ABC_Retail_CloudApp/Views/Shared/Error.cshtml]

@@ -1,6 +1,13 @@
 using ABC_Retail_CloudApp.Services;
+using ABC_Retail_CloudApp.Data;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
+
+// Add SQL Database
+builder.Services.AddDbContext<SQLDbContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("AzureSQL")));
+
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();

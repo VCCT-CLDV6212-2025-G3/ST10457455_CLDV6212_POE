@@ -8,7 +8,7 @@ namespace ABC_Retail_CloudApp.Services
 
         public AzureQueueService(IConfiguration config)
         {
-            string conn = config.GetConnectionString("AzureStorage")!;
+            string conn = config.GetConnectionString("AzureStorageConnection")!;
             _queueServiceClient = new QueueServiceClient(conn);
         }
 

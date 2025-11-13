@@ -8,14 +8,21 @@ namespace ABC_Retail_CloudApp.Services
 
         public AzureTableService(IConfiguration config)
         {
-            string conn = config.GetConnectionString("AzureStorage")!;
-            _tableServiceClient = new TableServiceClient(conn);
+            // Get the Storage connection string
+            string connectionString = config.GetConnectionString("AzureStorageConnection")
+                ?? throw new Exception("AzureStorageConnection not found in appsettings.json");
+
+            _tableServiceClient = new TableServiceClient(connectionString);
         }
 
+        // Returns a TableClient for any table
         public async Task<TableClient> GetTableClientAsync(string tableName)
         {
             TableClient tableClient = _tableServiceClient.GetTableClient(tableName);
+
+            // Create table if it doesn't exist
             await tableClient.CreateIfNotExistsAsync();
+
             return tableClient;
         }
     }

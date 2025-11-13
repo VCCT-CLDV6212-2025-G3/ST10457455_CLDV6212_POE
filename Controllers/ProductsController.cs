@@ -23,27 +23,35 @@ namespace ABC_Retail_CloudApp.Controllers
             _logger = logger;
         }
 
-        // Display all products from Table Storage
+        // 🧩 Display all products
         public async Task<IActionResult> Index(string? searchTerm)
         {
             var tableClient = await _tableService.GetTableClientAsync("Products");
             var products = tableClient.Query<ProductEntity>().ToList();
 
-        // Filter results if search term entered
-        if (!string.IsNullOrEmpty(searchTerm))
-        {
-            products = products
-                .Where(p =>
-                    (p.ProductName != null && p.ProductName.Contains(searchTerm, StringComparison.OrdinalIgnoreCase)) ||
-                    (p.Category != null && p.Category.Contains(searchTerm, StringComparison.OrdinalIgnoreCase)))
-                .ToList();
+            if (!string.IsNullOrEmpty(searchTerm))
+            {
+                products = products
+                    .Where(p =>
+                        (p.ProductName != null && p.ProductName.Contains(searchTerm, StringComparison.OrdinalIgnoreCase)) ||
+                        (p.Category != null && p.Category.Contains(searchTerm, StringComparison.OrdinalIgnoreCase)))
+                    .ToList();
+            }
+
+            ViewBag.SearchTerm = searchTerm;
+            return View(products);
         }
 
-        ViewBag.SearchTerm = searchTerm;
-        return View(products);
-    }
+        // ✅ GET: Products/Create — shows the Add Product form
+        [HttpGet]
+        public IActionResult Create()
+        {
+            return View();
+        }
 
+        // ✅ POST: Products/Create — handles form submission
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(ProductUploadModel model)
         {
             if (!ModelState.IsValid)
@@ -51,12 +59,12 @@ namespace ABC_Retail_CloudApp.Controllers
 
             try
             {
-                // Upload image to Blob Storage and get URL
+                // Upload image to Blob Storage (if provided)
                 string imageUrl = model.ProductImage != null
-                    ? await _blobService.UploadFileAsync("product-images", model.ProductImage)
+                    ? await _blobService.UploadFileAsync(ContainerName, model.ProductImage)
                     : string.Empty;
 
-                // Create new table entity
+                // Create a new product entity
                 var product = new ProductEntity
                 {
                     PartitionKey = "Products",
@@ -80,7 +88,5 @@ namespace ABC_Retail_CloudApp.Controllers
                 return View(model);
             }
         }
-
-
     }
 }
